@@ -1,0 +1,90 @@
+.arrowup,
+.arrowdown {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.arrowup {
+    margin-bottom: 17px;
+}
+
+.arrowdown {
+    margin-left: -10px;
+    margin-top: 0px;
+}
+
+.btn-info.text-dark {
+    color: black;
+}
+
+/* Custom styles for the page size dropdown */
+#pageSize {
+    width: 80px;
+    display: inline-block;
+}
+
+/* Custom pagination styles */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: black; /* Set the text color to black for active page link */
+}
+
+.pagination .page-item .page-link {
+    color: #17a2b8;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* Additional margin for the page size label */
+label[for="pageSize"] {
+    margin-right: 10px;
+}
+
+.page-size-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling the label */
+.page-size-container label {
+    margin-right: 10px;
+    font-weight: bold;
+   
+    font-size: 1.1em;
+}
+
+/* Custom styles for the dropdown */
+#pageSize {
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 1em;
+    border: 2px solid #17a2b8;
+    border-radius: 5px;
+    color: #17a2b8;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+#pageSize:hover {
+    border-color: #138496;
+    color: #138496;
+}
+
+
+
+/* Additional margin for the page size label */
+label[for="pageSize"] {
+    margin-right: 10px;
+}

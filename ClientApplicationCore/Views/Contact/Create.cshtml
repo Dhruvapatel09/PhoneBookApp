@@ -1,0 +1,171 @@
+﻿@using ClientApplicationCore.ViewModels
+@model AddContactViewModel
+
+<h1 class="text-center my-4">Add New Contact</h1>
+<div class="d-flex justify-content-center">
+    <div class="card shadow-sm p-4" style="max-width: 500px; width: 100%;">
+        <form asp-action="Create" enctype="multipart/form-data" novalidate>
+            <div class="form-group mb-3">
+                <label asp-for="FirstName" class="form-label">First Name</label>
+                <input asp-for="FirstName" class="form-control" placeholder="Enter first name" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="LastName" class="form-label">Last Name</label>
+                <input asp-for="LastName" class="form-control" placeholder="Enter last name" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Email" class="form-label">Email</label>
+                <input asp-for="Email" class="form-control" placeholder="Enter email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                <input asp-for="PhoneNumber" class="form-control" placeholder="Enter phone number" type="number"/>
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Company" class="form-label">Company</label>
+                <input asp-for="Company" class="form-control" placeholder="Enter company" />
+                <span asp-validation-for="Company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="file" class="control-label"></label>
+                @*  <input asp-for="Image" type="hidden" id="fileName" /> *@
+                <input asp-for="file" type="file" class="custom-file-input" id="fileInput" accept="image/*">
+                <img src="" alt="" id="imagePreview" style="width: 100px; height: 100px; display: none;" />
+                <button class="btn btn-danger" id="removeImage" style="display: none;">
+                    <i class="fa fa-xmark"></i>
+                </button>
+
+            </div>
+           
+
+            <script>
+                function previewImage(input) {
+                    var preview = document.getElementById('imagePreview');
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            preview.src = e.target.result;
+                        }
+                        reader.readAsDataURL(input.files[0]); 
+                    } else {
+                        preview.src = '';
+                    }
+                }
+            </script>
+
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label">Gender:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" asp-for="Gender" value="Male" id="IsGenderTrue" />
+                    <label class="form-check-label" for="IsGenderTrue">M</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" asp-for="Gender" value="Female" id="IsGenderFalse" />
+                    <label class="form-check-label" for="IsGenderFalse">F</label>
+                </div>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Birthdate" class="form-label">Birthdate</label>
+                <input asp-for="Birthdate" class="form-control" placeholder="Enter birthdate" type="date" />
+                <span asp-validation-for="Birthdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CountryId" class="control-label"></label>
+                <select id="divisionDropdown" asp-for="CountryId" class="form-control" asp-items="@(new SelectList(Model.Countries, "CountryId", "CountryName"))">
+                    <option value="">--Select Country--</option>
+                </select>
+                <span asp-validation-for="CountryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StateId" class="control-label"></label>
+                <select id="positionDropdown" asp-for="StateId" class="form-control">
+                    @foreach (var position in Model.States)
+                    {
+                        <option value="">--Select State--</option>
+                        <option value="@position.StateId" data-category="@position.CountryId">@position.StateName</option>
+                    }
+                </select>
+                <span asp-validation-for="StateId" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+
+                <label asp-for="Favourites" class="control-label"></label>
+
+                <input asp-for="Favourites" type="checkbox" />
+
+                <span asp-validation-for="Favourites" class="text-danger"></span>
+
+            </div>
+            <div class="d-grid mb-3">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+            <div class="d-grid">
+                <a asp-action="ShowAllContactWithPagination" class="btn btn-secondary">Back to Homepage</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .form-control {
+        border-radius: 5px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-secondary {
+        border-radius: 5px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(function () {
+        // Initially hide all supplier options
+        $('#positionDropdown option').hide();
+
+        // Get the initially selected category
+        var initialCategory = $('#divisionDropdown').val();
+
+        // Show supplier options corresponding to the initially selected category
+        $('#positionDropdown option[data-category="' + initialCategory + '"]').show();
+
+        $('#divisionDropdown').change(function () {
+            var countryId = $(this).val();
+            if (countryId === '') {
+                $('#positionDropdown option').hide();
+                $('#positionDropdown ').val('');
+            }
+            else {
+                $('#positionDropdown option').hide();
+                $('#positionDropdown option[data-category="' + countryId + '"]').show();
+
+            }
+            $('#positionDropdown').val('');
+        });
+    });
+</script>
+
+

@@ -1,0 +1,441 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\contact\\getallcontactsbystatessp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\contact\\getallcontactsbystatessp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\implementation\\httpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\implementation\\httpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\apiapplicationcore\\services\\implementation\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|solutionrelative:apiapplicationcore\\services\\implementation\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\contact\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\contact\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\contact\\showallcontactwithpagination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\contact\\showallcontactwithpagination.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\apiapplicationcore\\services\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|solutionrelative:apiapplicationcore\\services\\implementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\apiapplicationcore\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|solutionrelative:apiapplicationcore\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\apiapplicationcore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|solutionrelative:apiapplicationcore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\implementation\\imageupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\implementation\\imageupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\apiapplicationcore\\data\\implementation\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DC61CCF-5EB2-4F1F-9EA7-3E80B0A81633}|ApiApplicationCore\\ApiApplicationCore.csproj|solutionrelative:apiapplicationcore\\data\\implementation\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\shared\\_reportpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\shared\\_reportpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\contact\\getallcontactsbybirthdaymonthsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\contact\\getallcontactsbybirthdaymonthsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\viewmodels\\contactreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\viewmodels\\contactreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\contact\\getallcontactscountbycountrysp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\contact\\getallcontactscountbycountrysp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\contact\\getallcontactscountbygendersp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\contact\\getallcontactscountbygendersp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|c:\\repos\\horizon-feb2024\\phonebookapp\\clientapplicationcore\\viewmodels\\countviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B237C439-1B2B-406D-87F8-3C8482FDA8A9}|ClientApplicationCore\\ClientApplicationCore.csproj|solutionrelative:clientapplicationcore\\viewmodels\\countviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 180,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ClientApplicationCore\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T04:51:07.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ImageUpload.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Implementation\\ImageUpload.cs",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Implementation\\ImageUpload.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Implementation\\ImageUpload.cs",
+              "RelativeToolTip": "ClientApplicationCore\\Implementation\\ImageUpload.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAxwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T07:30:11.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiApplicationCore\\appsettings.json",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\appsettings.json",
+              "RelativeToolTip": "ApiApplicationCore\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-02T08:21:15.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\Details.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Contact\\Details.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\Details.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Contact\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T12:39:40.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactService.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\Services\\Implementation\\ContactService.cs",
+              "RelativeDocumentMoniker": "ApiApplicationCore\\Services\\Implementation\\ContactService.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\Services\\Implementation\\ContactService.cs",
+              "RelativeToolTip": "ApiApplicationCore\\Services\\Implementation\\ContactService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAOAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:54:36.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "ApiApplicationCore\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "ApiApplicationCore\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAowI8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T06:49:31.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetAllContactsByStatesSP.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\GetAllContactsByStatesSP.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Contact\\GetAllContactsByStatesSP.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\GetAllContactsByStatesSP.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Contact\\GetAllContactsByStatesSP.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T04:52:38.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T04:51:21.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T04:59:47.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HttpClientService.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Implementation\\HttpClientService.cs",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Implementation\\HttpClientService.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Implementation\\HttpClientService.cs",
+              "RelativeToolTip": "ClientApplicationCore\\Implementation\\HttpClientService.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAzwEEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T06:58:17.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ClientApplicationCore\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAANkAAAAAAAAAAAAIwPYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T06:54:49.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "ClientApplicationCore\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAHwBAAAAAAAAAAAAAPEBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T10:22:26.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShowAllContactWithPagination.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\ShowAllContactWithPagination.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Contact\\ShowAllContactWithPagination.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\ShowAllContactWithPagination.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Contact\\ShowAllContactWithPagination.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T07:13:47.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\Services\\Implementation\\AuthService.cs",
+              "RelativeDocumentMoniker": "ApiApplicationCore\\Services\\Implementation\\AuthService.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\Services\\Implementation\\AuthService.cs",
+              "RelativeToolTip": "ApiApplicationCore\\Services\\Implementation\\AuthService.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAjwGQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T06:54:49.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ContactReport.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\ViewModels\\ContactReport.cs",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\ViewModels\\ContactReport.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\ViewModels\\ContactReport.cs",
+              "RelativeToolTip": "ClientApplicationCore\\ViewModels\\ContactReport.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T06:40:35.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetAllContactsCountByGenderSP.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\GetAllContactsCountByGenderSP.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Contact\\GetAllContactsCountByGenderSP.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\GetAllContactsCountByGenderSP.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Contact\\GetAllContactsCountByGenderSP.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T05:07:05.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetAllContactsCountByCountrySP.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\GetAllContactsCountByCountrySP.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Contact\\GetAllContactsCountByCountrySP.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\GetAllContactsCountByCountrySP.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Contact\\GetAllContactsCountByCountrySP.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T05:02:13.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetAllContactsByBirthdayMonthSP.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\GetAllContactsByBirthdayMonthSP.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Contact\\GetAllContactsByBirthdayMonthSP.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Contact\\GetAllContactsByBirthdayMonthSP.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Contact\\GetAllContactsByBirthdayMonthSP.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAAEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T04:51:19.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ReportPartialView.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Shared\\_ReportPartialView.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Shared\\_ReportPartialView.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Shared\\_ReportPartialView.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Shared\\_ReportPartialView.cshtml",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAFgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T04:33:16.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CountViewModel.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\ViewModels\\CountViewModel.cs",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\ViewModels\\CountViewModel.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\ViewModels\\CountViewModel.cs",
+              "RelativeToolTip": "ClientApplicationCore\\ViewModels\\CountViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T04:26:46.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ClientApplicationCore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ClientApplicationCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ClientApplicationCore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABgAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T12:12:28.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ContactRepository.cs",
+              "DocumentMoniker": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\Data\\Implementation\\ContactRepository.cs",
+              "RelativeDocumentMoniker": "ApiApplicationCore\\Data\\Implementation\\ContactRepository.cs",
+              "ToolTip": "C:\\Repos\\Horizon-Feb2024\\PhoneBookApp\\ApiApplicationCore\\Data\\Implementation\\ContactRepository.cs",
+              "RelativeToolTip": "ApiApplicationCore\\Data\\Implementation\\ContactRepository.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAADwvx0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T11:54:36.534Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 180,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 176,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{320fd13f-632f-4b16-9527-a1adfe555f6c}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

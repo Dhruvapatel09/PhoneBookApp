@@ -1,0 +1,54 @@
+﻿@using ClientApplicationCore.ViewModels
+@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1 class="text-center my-4">Login</h1>
+<div class="d-flex justify-content-center">
+    <div class="card shadow-sm p-4" style="max-width: 400px; width: 100%;">
+        <form asp-action="Login" method="post" novalidate>
+            <div class="form-group mb-3">
+                <label asp-for="UserName" class="form-label">Username</label>
+                <input asp-for="UserName" class="form-control" placeholder="Enter your username" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Password" class="form-label">Password</label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="d-grid">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+            <div class="text-center">
+                <a asp-action="ForgotPassword" class="link-primary">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .form-control {
+        border-radius: 5px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>

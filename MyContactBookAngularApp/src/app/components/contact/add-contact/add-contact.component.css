@@ -1,0 +1,54 @@
+/* Highlight active input fields */
+input:focus, select:focus, textarea:focus {
+    border-color: #17a2b8; /* Bootstrap info color */
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+}
+
+/* Style for validation feedback */
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.is-valid {
+    border-color: #28a745;
+}
+
+/* Loader overlay */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Custom margin and padding */
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+/* Custom styles for the file input and remove button */
+input[type="file"] {
+    width: auto;
+}
+
+button.btn-danger {
+    margin-left: 0.5rem;
+}
+
+/* Button styles */
+button[type="submit"] {
+    margin-top: 1rem;
+}
+
+button[type="button"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

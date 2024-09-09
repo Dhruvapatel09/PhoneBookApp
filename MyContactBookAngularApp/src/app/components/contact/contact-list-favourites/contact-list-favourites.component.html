@@ -1,0 +1,122 @@
+<div *ngIf="loading">
+    <img src="assets/loaderImage.gif" alt="Loading.." />
+</div>
+<h1>Favourite Contacts</h1>
+<div>
+    <div>
+       
+            <!-- <button class="btn btn-outline-primary" *ngFor="let letter of alphabet" (click)="onLetterClick(letter)">{{ letter }}</button> -->
+            <ng-container *ngIf="contacts && contacts.length > 0">
+                <button *ngFor="let letter of uniqueFirstLetters" class="btn btn-outline-info letter"
+                    style="margin: 2px;" (click)="filterByLetter(letter)">{{ letter }}</button>
+            </ng-container>
+            <button *ngIf="contacts !== null" class="btn btn-outline-info letter" (click)="filterByLetter('')">Show
+                All</button>
+        </div>
+        <!-- <button *ngFor="let letter of alphabet" class="btn btn-outline-info letter" (click)="filterByLetter(letter)">
+            {{ letter }}
+        </button>
+        <a *ngIf="contacts !== null" class="btn btn-outline-info letter" (click)="filterByLetter(null)"
+            [routerLink]="['/contacts-favourites']" routerLinkActive="router-link-active">Show All</a> -->
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th>Name
+                    <div class="fas fa-caret-up arrowup" (click)="sortAsc()"></div>
+                    <div class="fas fa-caret-down arrowdown" (click)="sortDesc()"></div>
+                </th>
+                <th>Profile Picture</th>
+                <th></th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="contacts && contacts.length > 0 && totalItems != 0; else noContacts">
+
+            <tr *ngFor="let contact of contacts">
+                <td><b>{{contact.firstName}} {{contact.lastName}}</b></td>
+                <td>
+
+                    <!-- <div class="col-sm-10">
+                            <img src="assets/{{contact.image}}" class="img-fluid rounded-circle" alt="Profile Picture" width="50" height="50" />
+                        </div> -->
+                    <div class="col-sm-10">
+                        <img *ngIf="contact.imageByte; else defaultImage" class="card-image img-fluid rounded-circle"
+                            [src]="'data:image/jpeg;base64,' + contact.imageByte" alt="Contact Image"
+                            [style.height.px]="50" [style.width.px]="50">
+
+                        <ng-template #defaultImage>
+                            <img src="assets/DefaultImage.jpg" class="card-image img-fluid rounded-circle"
+                                alt="Default Image" [style.height.px]="50" [style.width.px]="50">
+                        </ng-template>
+
+                    </div>
+                </td>
+                <td> <span *ngIf="contact.favourites" class="fa fa-star text-warning"></span></td>
+
+                <td>
+                    <a class="btn btn-outline-warning" [routerLink]="['/contactdetails',contact.phoneId]"
+                        routerLinkActive="router-link-active"><i class="fas fa-info-circle"></i></a>
+                    <a class="btn btn-outline-dark" [routerLink]="['/editcontact',contact.phoneId]"
+                        routerLinkActive="router-link-active"> <i class="fas fa-edit"></i></a>
+                    <a class="btn btn-outline-danger" (click)="confirmDelete(contact.phoneId) "> <i
+                            class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+
+        </tbody>
+        <ng-template #noContacts>
+            <tr>
+                <td colspan="3">No contacts found</td>
+            </tr>
+        </ng-template>
+    </table>
+
+
+    <div class="container mt-4">
+        <!-- Page Size Dropdown -->
+        <div *ngIf="contacts && contacts.length > 0 && totalItems != 0" class="page-size-container">
+            <label for="pageSize">Page Size:</label>
+            <select id="pageSize" class="form-select" [(ngModel)]="pageSize" (change)="changePageSize(pageSize)">
+                <option [ngValue]="2">2</option>
+                <option [ngValue]="4">4</option>
+                <option [ngValue]="6">6</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Pagination controls -->
+    <ul class="pagination justify-content-center" *ngIf="contacts && contacts.length > 0 && totalItems != 0">
+        <li class="page-item" [class.disabled]="pageNumber === 1">
+            <a class="page-link" (click)="changePage(1)" aria-label="First">
+                <span aria-hidden="true">&laquo;&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item" [class.disabled]="pageNumber === 1">
+            <a class="page-link" (click)="changePage(pageNumber - 1)" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li *ngFor="let i of [].constructor(totalPages); let index = index" class="page-item"
+            [class.active]="pageNumber === index + 1">
+            <a class="page-link" (click)="changePage(index + 1)">{{ index + 1 }}</a>
+        </li>
+        <li class="page-item" [class.disabled]="pageNumber === totalPages">
+            <a class="page-link" (click)="changePage(pageNumber + 1)" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        <li class="page-item" [class.disabled]="pageNumber === totalPages">
+            <a class="page-link" (click)="changePage(totalPages)" aria-label="Last">
+                <span aria-hidden="true">&raquo;&raquo;</span>
+            </a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    <div class="text-center mt-3">
+        <a [routerLink]="['/addcontact']" class="btn btn-info" routerLinkActive="router-link-active">Add Contact</a>
+    </div>

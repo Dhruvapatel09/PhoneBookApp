@@ -1,0 +1,52 @@
+﻿@using ClientApplicationCore.ViewModels
+@model ContactViewModel
+
+
+<h1 class="text-center my-4">Delete Contact</h1>
+<div class="d-flex justify-content-center">
+    <div class="card shadow-sm p-4" style="max-width: 500px; width: 100%;">
+        <h4 class="text-center text-danger">Are you sure you want to delete this contact?</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-4">First Name</dt>
+            <dd class="col-sm-8">@Model.FirstName</dd>
+
+            <dt class="col-sm-4">Last Name</dt>
+            <dd class="col-sm-8">@Model.LastName</dd>
+
+            <dt class="col-sm-4">Email</dt>
+            <dd class="col-sm-8">@Model.Email</dd>
+
+            <dt class="col-sm-4">Phone</dt>
+            <dd class="col-sm-8">@Model.PhoneNumber</dd>
+
+            <dt class="col-sm-4">Company</dt>
+            <dd class="col-sm-8">@Model.Company</dd>
+        </dl>
+        <form asp-action="DeleteConfirm" method="post" class="text-center mt-3">
+            <input type="hidden" asp-for="PhoneId" />
+            <div class="d-grid gap-2 d-md-block">
+                <input type="submit" value="Delete" class="btn btn-danger me-2" />
+                <a asp-action="ShowAllContactWithPagination" class="btn btn-secondary">Back to Homepage</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .btn-danger {
+        border-radius: 5px;
+    }
+
+    .btn-secondary {
+        border-radius: 5px;
+    }
+</style>

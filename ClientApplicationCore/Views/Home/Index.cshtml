@@ -1,0 +1,63 @@
+﻿@model int
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Book Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        /* Add custom styles here */
+        body {
+            background-color: #f8f9fc; /* Set background color */
+        }
+
+        .card {
+            border-radius: 10px; /* Rounded corners for cards */
+            transition: all 0.3s ease; /* Smooth transition on hover */
+        }
+
+            .card:hover {
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+            }
+
+        .bg-light-blue {
+            background-color: cornflowerblue !important; /* Light blue background color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid mt-4">
+
+        <!-- Page Heading -->
+        <h1 class="text-center mb-4">Welcome to Contact Book</h1>
+
+        <!-- Dashboard Cards -->
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+                <a href="@Url.Action("ShowAllContactWithPagination", "Contact")" class="text-decoration-none">
+                    <div class="card bg-light-blue text-white shadow">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <div class="h5 mb-0 font-weight-bold">Total Contacts</div>
+                                <div class="text-xl font-weight-bold">@Model</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+            <!-- Add more cards here -->
+        </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

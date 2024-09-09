@@ -1,0 +1,40 @@
+<div *ngIf="loading">
+    <img src="assets/loaderImage.gif" alt="Loading.." />
+</div>
+<h1>Contacts</h1>
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>Name</th>
+            <th>Profile Picture</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+            <tr *ngIf="!loading && !contacts">
+                <td colspan="3">No Contact Found.</td>
+            </tr>
+            <tr *ngFor="let contact of contacts">
+                <td><b>{{contact.firstName}} {{contact.lastName}}</b></td>
+                <td>
+                   
+                        <div class="col-sm-10">
+                            <img *ngIf="contact.imageByte" class="card-image img-fluid rounded-circle"
+                            [src]="'data:image/jpeg;base64,' + contact.imageByte" alt="Contact Image" [style.height.px]="50"
+                            [style.width.px]="50">
+                        </div>
+                    
+                </td>
+                
+                <td>
+                    <a class="btn btn-outline-warning" [routerLink]="['/contactdetails',contact.phoneId]" routerLinkActive="router-link-active" >Details</a>
+                    <a class="btn btn-outline-dark" [routerLink]="['/editcontact',contact.phoneId]" routerLinkActive="router-link-active" >Edit</a>
+                    <button *ngIf="isAuthenticated" class="btn btn-outline-danger " (click)="confirmDelete(contact.phoneId)" >Delete</button>
+                    <a *ngIf="!isAuthenticated"  class="btn btn-outline-danger" [routerLink]="['/signin']" routerLinkActive="router-link-active" >Delete</a>   </td>
+        </tr>
+       
+    </tbody>
+</table>
+<a [routerLink]="['/addcontact']" routerLinkActive="router-link-active">Add</a>

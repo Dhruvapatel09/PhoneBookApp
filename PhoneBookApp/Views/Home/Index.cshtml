@@ -1,0 +1,59 @@
+﻿@model List<PhoneBookModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Contact Book. </h1>
+    <hr />
+
+    <div >
+        
+        <form method="get">
+            @for (char letter = 'A'; letter <= 'Z'; letter++)
+            {
+                <button type="submit" class="btn btn-info" name="letter" value="@letter">@letter</button>
+            }
+            <hr />
+            <div>
+                <button type="submit" class="btn btn-info" name="All" value="contact">Show all contact</button>
+            </div>
+        </form>
+
+        @if (Model.Any())
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Contact Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Contact Number</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var contact in Model)
+                    {
+                        <tr>
+                            <td>@contact.PhoneId</td>
+                            <td>@contact.FirstName</td>
+                            <td>@contact.LastName</td>
+                            <td>@contact.PhoneNumber</td>
+                            <td>
+
+                                <a asp-action="Details" asp-route-id="@contact.PhoneId">Details</a>
+                                
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            }
+        else
+        {
+            <p>No contacts available.</p>
+        }
+    </div>
+</div>

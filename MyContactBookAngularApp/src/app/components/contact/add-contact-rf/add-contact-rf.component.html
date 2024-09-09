@@ -1,0 +1,194 @@
+<div class="container">
+    <h2 class="row justify-content-center">Add contact</h2>
+    <div *ngIf="loading" class="loader-overlay">
+        <img src="assets/loaderImage.gif" class="loader-overlay" alt="loading" />
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form [formGroup]="contactForm" (ngSubmit)="OnSubmit()">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name: </label>
+                    <input type="text" class="form-control" id="firstName" formControlName="firstName" />
+                    <div *ngIf="
+              formControl['firstName'].invalid &&
+              formControl['firstName'].touched
+            ">
+                        <small class="text-danger" *ngIf="formControl['firstName'].errors?.['required']">
+                            First name is required
+                        </small>
+                        <small class="text-danger" *ngIf="formControl['firstName'].errors?.['minlength']">
+                            First name must be at least 2 characters
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name: </label>
+                    <input type="text" class="form-control" id="lastName" formControlName="lastName" />
+                    <div *ngIf="
+              formControl['lastName'].invalid &&
+              formControl['lastName'].touched
+            ">
+                        <small class="text-danger" *ngIf="formControl['lastName'].errors?.['required']">
+                            Last name is required
+                        </small>
+                        <small class="text-danger" *ngIf="formControl['lastName'].errors?.['minlength']">
+                            Last name must be at least 2 characters
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3"style="display: flex; align-items: center;">
+                    <label class="form-label" for="imageByte">Profile Image:</label>
+                    <input type="file" class="form-control" id="imageByte"  #imageInput (change)="onFileChange($event)">
+                    <!-- Add the cross button to remove the selected file -->
+                    <small class="text-danger" *ngIf="fileSizeExceeded">
+                        Image size cannot be greater than 50KB                
+                            </small>
+                            <small class="text-danger" *ngIf="fileFormatInvalid">
+                        Image can only be jpg,png or jpeg               
+                            </small>
+                </div>
+
+                <!-- Display the uploaded image -->
+                <div class="mb-3" *ngIf="imageUrl && !fileSizeExceeded">
+
+                    <img [src]="imageUrl" id="displayImage" alt="Uploaded Image" class="img-thumbnail"
+                        style="max-width: 200px; max-height: 200px;">
+                        <button type="button" class="btn btn-danger" *ngIf="imageUrl" (click)="removeFile()"><i class="fas fa-times"></i></button>
+
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email: </label>
+                    <input type="email" class="form-control" id="email" formControlName="email" />
+                    <div *ngIf="
+              formControl['email'].invalid &&
+              formControl['email'].touched
+            ">
+                        <small class="text-danger" *ngIf="formControl['email'].errors?.['required']">
+                            Email is required
+                        </small>
+                        <small class="text-danger" *ngIf="contactForm.controls['email']?.errors?.['email']">Invalid email
+                            format.</small>
+                  
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="company" class="form-label">Company:
+                    </label>
+                    <input class="form-control" id="company"
+                        formControlName="company">
+                    <div *ngIf="
+              formControl['company'].invalid &&
+              formControl['company'].touched
+            ">
+                        <small class="text-danger" *ngIf="formControl['company'].errors?.['required']">
+                            Company is required
+                        </small>
+                        <small class="text-danger" *ngIf="formControl['company'].errors?.['minlength']">
+                            Company must be at least 5 characters
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="countryId" class="form-label">Country: </label>
+                    <select class="form-control" id="countryId" formControlName="countryId">
+                        <option value="">---Select---</option>
+                        <option *ngFor="let country of country" [value]="country.countryId">
+                            {{ country.countryName }}
+                        </option>
+                    </select>
+                    <div *ngIf="
+              formControl['countryId'].invalid &&
+              formControl['countryId'].touched
+            ">
+                        <small class="text-danger"
+                            *ngIf="formControl['countryId'].errors?.['required'] || formControl['countryId'].errors?.['invalidContact']">
+                            Country is required
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="stateId" class="form-label">State: </label>
+                    <select class="form-control" id="stateId" formControlName="stateId">
+                        <option value="">---Select---</option>
+                        <option *ngFor="let state of state" [value]="state.stateId">
+                            {{ state.stateName }}
+                        </option>
+                    </select>
+                    <div *ngIf="
+                          formControl['stateId'].invalid &&
+                          formControl['stateId'].touched
+                        ">
+                        <small class="text-danger"
+                            *ngIf="formControl['stateId'].errors?.['required'] || formControl['stateId'].errors?.['invalidContact']">
+                            State is required
+                        </small>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone: </label>
+                    <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber" />
+                    <div *ngIf="
+              formControl['phoneNumber'].invalid &&
+              formControl['phoneNumber'].touched
+            ">
+                        <small class="text-danger" *ngIf="formControl['phoneNumber'].errors?.['required']">
+                       Phone is required
+                        </small>
+                        <small class="text-danger" *ngIf="formControl['phoneNumber'].errors?.['minlength']">
+                           Phone number must be 10 digit
+                        </small>
+                        <small class="text-danger" *ngIf="formControl['phoneNumber'].errors?.['maxlength']">
+                            Phone number must be 10 digit
+                        </small>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender: </label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="male" value="m"
+                                formControlName="gender" />
+                            <label for="male" class="form-label"> Male </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="female" value="f"
+                                formControlName="gender" />
+                            <label for="female" class="form-label">Female </label>
+                        </div>
+                        <div *ngIf="
+                         formControl['gender'].invalid && formControl['gender'].touched
+                           ">
+                            <small class="text-danger" *ngIf="formControl['gender'].errors?.['required']">
+                                Gender is required
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" id="favourites" formControlName="favourites" />
+                    <label for="favourites" class="form-label"> Is Favourite? </label>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="birthdate" class="form-label m-1">Date of Birth:</label>
+                    <input type="date" class="form-label" id="birthdate" formControlName="birthdate" />
+                    <div *ngIf="formControl['birthdate'].invalid && formControl['birthdate'].touched">
+                        <small class="text-danger" *ngIf="formControl['birthdate'].errors?.['invalidBirthDate']">
+Invalid Birth Date
+                        </small>
+                      </div>
+                </div>
+
+                <div class="d-flex justify-content">
+                    <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">
+                        Add
+                    </button>
+                
+                    <a class="btn btn-outline-info m-1" [routerLink]="['/contacts-pagination']" routerLinkActive="router-link-active">Back to List</a>
+                </div>
+                </form>
+        </div>
+    </div>
+</div>
